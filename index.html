@@ -3,25 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
+    <title>SMIT Form</title>
   </head>
   <body>
-    <h1><u>Form</u></h1>
-    <form>
-      <input name="text" placeholder="name" required type="text" />
-      <input father name="text" placeholder="father name" required type="text">
-      <input password="password" placeholder="password" required type="text">
-      <input email="email" placeholder="enter your email" required type="email">
-      <input type="phone number" placeholder="enter your phone number" required type="number">
-      <input type="profile link" placeholder="enter your profile link" required type="url"><br>
-      <h2>Select you car color</h2>
-      <input type="color">
-      <h2>Type your date</h2>
-      <input type="date"><br>
-      <h2>Select the range</h2>
-      <input type="range"><br>
-      <button type="reset">reset</button>
-      <button type="submit">done</button>
+    <h1>SMIT</h1>
+    <h2>Registration Form</h2>
+
+    <form action="./form.html">
+      <label for="full name">
+        <b>Full name:</b><br />
+        <input
+          type="text"
+          name="full name"
+          size="30"
+          maxlength="50"
+          placeholder="Full name"
+          required
+        />
+        <br /><br />
+      </label>
+      <label for="fathername"
+        ><b>Father name:</b><br />
+        <input
+          type="text"
+          name="Father name"
+          size="30"
+          maxlength="50"
+          placeholder="Father name"
+          required
+        /><br /><br />
+      </label>
+      <label for="Address">
+        <b>Address:</b><br />
+        <input
+          type="text"
+          name="Address"
+          size="30"
+          maxlength="50"
+          placeholder="Address"
+          required
+        />
+        <br /><br />
+      </label>
+      <label for="Email"
+        ><b>Email:</b><br />
+        <input
+          required
+          type="email"
+          name="Email"
+          size="30"
+          maxlength="50"
+          placeholder="Email"
+        /><br /><br />
+      </label>
+      <label for="password">
+        <b>Password</b><br />
+        <input
+          required
+          type="password"
+          size="30"
+          maxlength="50"
+          name="password"
+          placeholder="Password"
+        /> </label
+      ><br /><br />
+      <label for="CNIC"
+        ><b>CNIC:</b><br />
+        <input
+          required
+          type="number"
+          name="CNIC"
+          size="30"
+          maxlength="50"
+          placeholder="CNIC"
+        /> </label
+      ><br /><br />
+      <label for="tel"
+        ><b>Mobile Number:</b><br />
+        <input
+          required
+          type="number"
+          name="Mobile number"
+          size="30"
+          maxlength="50"
+          placeholder="Mobile number"
+        /> </label
+      ><br /><br />
+      <b>Bio:</b><br />
+      <textarea name="Bio" cols="30" rows="5"></textarea><br /><br />
+      <label for="DOB"
+        ><b>DOB</b><br />
+        <input
+          required
+          type="date"
+          name="DOB"
+          size="30"
+          maxlength="50"
+          placeholder="DOB"
+        /> </label
+      ><br /><br />
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" value="male" />Male <br />
+        <input type="radio" name="gender" value="femalt" />Female <br />
+        <input type="radio" name="gender" value="other" />Other <br />
+      </fieldset>
+      <fieldset>
+        <legend>Interests</legend>
+        <input type="radio" name="music" value="music" multiple />Music <br />
+        <input type="radio" name="sports" value="sports" multiple />Sports
+        <br />
+        <input type="radio" name="reading" value="reading" multiple />Reading
+        <br />
+      </fieldset>
+      <br /><br />
+      <b>Course:</b>
+      <select name="Course" required>
+        <option value="Select any course">Select Any Course</option>
+        <option value="Web and mobile app development">
+          Web and Mobile App Development
+        </option>
+        <option value="Flutter">Flutter</option>
+        <option value="A.I">Artificial Intelligence</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+        <option value="Laptop Repairing">Laptop Repairing</option></select
+      ><br /><br /><br />
+      <b>Country:</b>
+      <select name="Country" required>
+        <option value="Pakistan">Pakistan</option>
+        <option value="USA">USA</option>
+        <option value="turkey">Turkey</option>
+        <option value="france">France</option>
+        <option value="iran">Iran</option>
+        <option value="dubai">Dubai</option></select
+      ><br /><br />
+      <b>Favourite Color:</b>
+      <input type="color" />
+      <p>Profile Picture:</p>
+      <input type="file" name="profile picture" required /><br /><br />
+      <b>Website link</b>
+      <input
+        type="url"
+        name="website"
+        placeholder="not required"
+        size="30"
+        maxlength="50"
+      /><br /><br />
+      <button>reset</button> <button>Submit</button>
     </form>
   </body>
 </html>
